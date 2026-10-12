@@ -1,0 +1,1630 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- ============================================================
+         BASIC PAGE SETTINGS
+    ============================================================ -->
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Sentilytics - YouTube AI Sentiment Analysis Dashboard">
+
+    <meta name="author"
+          content="Sentilytics">
+
+    <title>Sentilytics | YouTube AI Sentiment Analysis</title>
+
+
+    <!-- ============================================================
+         GOOGLE FONT
+    ============================================================ -->
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+          rel="stylesheet">
+
+
+    <!-- ============================================================
+         MAIN CSS
+    ============================================================ -->
+
+    <link rel="stylesheet"
+          href="/static/style.css">
+
+</head>
+
+
+<body>
+
+
+<!-- ================================================================
+     BACKGROUND EFFECTS
+================================================================ -->
+
+<div class="background-effects">
+
+    <div class="glow glow-one"></div>
+
+    <div class="glow glow-two"></div>
+
+    <div class="glow glow-three"></div>
+
+</div>
+
+
+
+<!-- ================================================================
+     SIDEBAR
+================================================================ -->
+
+<aside class="sidebar"
+       id="sidebar">
+
+
+    <!-- BRAND -->
+
+    <div class="brand">
+
+        <div class="brand-icon">
+            ▶
+        </div>
+
+        <div>
+
+            <h2>
+                Sentilytics
+            </h2>
+
+            <span>
+                YouTube Analytics
+            </span>
+
+        </div>
+
+    </div>
+
+
+    <!-- NAVIGATION -->
+
+    <nav class="navigation">
+
+
+        <a href="#dashboard"
+           class="nav-item active">
+
+            <span>⌂</span>
+
+            <p>
+                Dashboard
+            </p>
+
+        </a>
+
+
+        <a href="#comments"
+           class="nav-item">
+
+            <span>💬</span>
+
+            <p>
+                Comments
+            </p>
+
+        </a>
+
+
+        <a href="#insights"
+           class="nav-item">
+
+            <span>◈</span>
+
+            <p>
+                Insights
+            </p>
+
+        </a>
+
+
+        <a href="#pipeline"
+           class="nav-item">
+
+            <span>⚙</span>
+
+            <p>
+                How It Works
+            </p>
+
+        </a>
+
+    </nav>
+
+
+    <!-- SIDEBAR BOTTOM -->
+
+    <div class="sidebar-bottom">
+
+
+        <div class="ai-badge">
+
+            <span class="status-dot"></span>
+
+            <div>
+
+                <strong>
+                    AI Engine
+                </strong>
+
+                <small>
+                    Ready to analyze
+                </small>
+
+            </div>
+
+        </div>
+
+
+        <button class="theme-button"
+                id="themeBtn"
+                onclick="toggleTheme()">
+
+            🌙
+
+            <span>
+                Dark Mode
+            </span>
+
+        </button>
+
+
+    </div>
+
+
+</aside>
+
+
+
+<!-- ================================================================
+     MAIN CONTENT
+================================================================ -->
+
+<main class="main-content"
+      id="dashboard">
+
+
+    <!-- ============================================================
+         TOP BAR
+    ============================================================ -->
+
+    <header class="topbar">
+
+
+        <!-- MOBILE MENU -->
+
+        <button class="mobile-menu"
+                onclick="toggleSidebar()">
+
+            ☰
+
+        </button>
+
+
+        <!-- BREADCRUMB -->
+
+        <div class="breadcrumb">
+
+            <span>
+                Analytics
+            </span>
+
+            <b>
+                /
+            </b>
+
+            <strong>
+                Dashboard
+            </strong>
+
+        </div>
+
+
+        <!-- TOP ACTIONS -->
+
+        <div class="top-actions">
+
+
+            <div class="live-indicator">
+
+                <span></span>
+
+                Live Analysis
+
+            </div>
+
+
+            <div class="profile">
+
+                <div class="profile-avatar">
+                    AI
+                </div>
+
+                <div>
+
+                    <strong>
+                        Sentilytics
+                    </strong>
+
+                    <small>
+                        AI &amp; Data Science
+                    </small>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+    </header>
+
+
+
+    <!-- ============================================================
+         HERO SECTION
+    ============================================================ -->
+
+    <section class="hero-section">
+
+
+        <div class="hero-content">
+
+
+            <div class="hero-label">
+
+                <span>
+                    ✦
+                </span>
+
+                AI-POWERED ANALYTICS
+
+            </div>
+
+
+            <h1>
+
+                Understand what your
+
+                <span>
+                    audience feels.
+                </span>
+
+            </h1>
+
+
+            <p>
+
+                Analyze YouTube comments with intelligent
+                sentiment analysis and transform audience
+                opinions into meaningful insights.
+
+            </p>
+
+
+            <div class="hero-features">
+
+
+                <div>
+
+                    <span>
+                        ✓
+                    </span>
+
+                    Real-time comments
+
+                </div>
+
+
+                <div>
+
+                    <span>
+                        ✓
+                    </span>
+
+                    AI sentiment detection
+
+                </div>
+
+
+                <div>
+
+                    <span>
+                        ✓
+                    </span>
+
+                    Visual analytics
+
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+
+
+        <!-- HERO VISUAL -->
+
+        <div class="hero-visual">
+
+
+            <div class="orbit orbit-one"></div>
+
+            <div class="orbit orbit-two"></div>
+
+
+            <div class="analysis-circle">
+
+
+                <div class="circle-icon">
+                    ▶
+                </div>
+
+
+                <strong>
+                    AI
+                </strong>
+
+
+                <small>
+                    ANALYSIS
+                </small>
+
+
+            </div>
+
+
+            <!-- POSITIVE CARD -->
+
+            <div class="floating-card card-positive">
+
+                <span>
+                    😊
+                </span>
+
+                <div>
+
+                    <strong>
+                        Positive
+                    </strong>
+
+                    <small>
+                        Audience
+                    </small>
+
+                </div>
+
+                <b>
+                    ↗
+                </b>
+
+            </div>
+
+
+            <!-- COMMENTS CARD -->
+
+            <div class="floating-card card-comments">
+
+                <span>
+                    💬
+                </span>
+
+                <div>
+
+                    <strong>
+                        Comments
+                    </strong>
+
+                    <small>
+                        Analyzed
+                    </small>
+
+                </div>
+
+                <b>
+                    ∞
+                </b>
+
+            </div>
+
+
+            <!-- AI CARD -->
+
+            <div class="floating-card card-ai">
+
+                <span>
+                    ✦
+                </span>
+
+                <div>
+
+                    <strong>
+                        AI Engine
+                    </strong>
+
+                    <small>
+                        Active
+                    </small>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+    </section>
+
+
+
+    <!-- ============================================================
+         YOUTUBE ANALYSIS INPUT
+    ============================================================ -->
+
+    <section class="analysis-box">
+
+
+        <div class="analysis-heading">
+
+
+            <div class="heading-icon">
+                ▶
+            </div>
+
+
+            <div>
+
+                <h2>
+                    Analyze a YouTube Video
+                </h2>
+
+                <p>
+                    Paste a public YouTube video URL
+                    to analyze its audience comments.
+                </p>
+
+            </div>
+
+
+        </div>
+
+
+        <!-- URL INPUT -->
+
+        <div class="url-input-wrapper">
+
+
+            <div class="url-icon">
+                🔗
+            </div>
+
+
+            <input
+                type="text"
+                id="videoUrl"
+                placeholder="https://www.youtube.com/watch?v=..."
+                autocomplete="off"
+            >
+
+
+            <button
+                type="button"
+                id="analyzeBtn"
+                class="analyze-button"
+                onclick="analyzeVideo()"
+            >
+
+                <span>
+                    Analyze Video
+                </span>
+
+                <b>
+                    →
+                </b>
+
+            </button>
+
+
+        </div>
+
+
+        <!-- INPUT BOTTOM -->
+
+        <div class="input-bottom">
+
+
+            <div class="supported">
+
+                <span>
+                    ✓
+                </span>
+
+                Supports YouTube videos and Shorts
+
+            </div>
+
+
+            <button
+                type="button"
+                class="demo-button"
+                onclick="loadDemo()"
+            >
+
+                ✦ Try Demo Data
+
+            </button>
+
+
+        </div>
+
+
+        <!-- STATUS -->
+
+        <div id="statusMessage"
+             class="status-message">
+
+            Ready — enter a YouTube URL to begin.
+
+        </div>
+
+
+    </section>
+
+
+
+    <!-- ============================================================
+         VIDEO INFORMATION
+    ============================================================ -->
+
+    <section class="video-info-card"
+             id="videoInfoCard"
+             hidden>
+
+
+        <!-- THUMBNAIL -->
+
+        <div class="video-thumbnail-container">
+
+
+            <img
+                id="videoThumbnail"
+                src=""
+                alt="YouTube video thumbnail"
+            >
+
+
+            <div class="thumbnail-overlay">
+
+                <span>
+                    ▶
+                </span>
+
+            </div>
+
+
+        </div>
+
+
+        <!-- VIDEO DETAILS -->
+
+        <div class="video-details">
+
+
+            <span class="video-label">
+
+                ANALYZED YOUTUBE VIDEO
+
+            </span>
+
+
+            <h2 id="videoTitle">
+
+                YouTube Video
+
+            </h2>
+
+
+            <p id="videoChannel"
+               class="video-channel">
+
+                Channel Name
+
+            </p>
+
+
+            <a
+                id="watchVideoLink"
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="watch-video-btn"
+            >
+
+                ▶ Watch on YouTube
+
+            </a>
+
+
+        </div>
+
+
+    </section>
+
+
+
+    <!-- ============================================================
+         STATISTICS SECTION
+    ============================================================ -->
+
+    <section class="stats-section">
+
+
+        <div class="section-title">
+
+
+            <div>
+
+                <span class="eyebrow">
+                    OVERVIEW
+                </span>
+
+                <h2>
+                    Sentiment at a glance
+                </h2>
+
+            </div>
+
+
+            <div class="analysis-status">
+
+                <span></span>
+
+                Analysis Ready
+
+            </div>
+
+
+        </div>
+
+
+
+        <!-- STATS GRID -->
+
+        <div class="stats-grid">
+
+
+            <!-- TOTAL COMMENTS -->
+
+            <div class="stat-card">
+
+
+                <div class="stat-top">
+
+                    <div class="stat-icon">
+                        💬
+                    </div>
+
+                    <span class="stat-arrow">
+                        ↗
+                    </span>
+
+                </div>
+
+
+                <div class="stat-number"
+                     id="totalComments">
+
+                    0
+
+                </div>
+
+
+                <div class="stat-label">
+
+                    Total Comments
+
+                </div>
+
+
+                <div class="stat-description">
+
+                    Comments analyzed
+
+                </div>
+
+
+            </div>
+
+
+
+            <!-- POSITIVE -->
+
+            <div class="stat-card positive-card">
+
+
+                <div class="stat-top">
+
+                    <div class="stat-icon">
+                        😊
+                    </div>
+
+                    <span class="sentiment-badge">
+                        Positive
+                    </span>
+
+                </div>
+
+
+                <div class="stat-number"
+                     id="positiveCount">
+
+                    0
+
+                </div>
+
+
+                <div class="stat-label">
+
+                    Positive Comments
+
+                </div>
+
+
+                <div class="progress">
+
+                    <div id="positiveProgress"></div>
+
+                </div>
+
+
+            </div>
+
+
+
+            <!-- NEGATIVE -->
+
+            <div class="stat-card negative-card">
+
+
+                <div class="stat-top">
+
+                    <div class="stat-icon">
+                        😞
+                    </div>
+
+                    <span class="sentiment-badge">
+                        Negative
+                    </span>
+
+                </div>
+
+
+                <div class="stat-number"
+                     id="negativeCount">
+
+                    0
+
+                </div>
+
+
+                <div class="stat-label">
+
+                    Negative Comments
+
+                </div>
+
+
+                <div class="progress">
+
+                    <div id="negativeProgress"></div>
+
+                </div>
+
+
+            </div>
+
+
+
+            <!-- NEUTRAL -->
+
+            <div class="stat-card neutral-card">
+
+
+                <div class="stat-top">
+
+                    <div class="stat-icon">
+                        😐
+                    </div>
+
+                    <span class="sentiment-badge">
+                        Neutral
+                    </span>
+
+                </div>
+
+
+                <div class="stat-number"
+                     id="neutralCount">
+
+                    0
+
+                </div>
+
+
+                <div class="stat-label">
+
+                    Neutral Comments
+
+                </div>
+
+
+                <div class="progress">
+
+                    <div id="neutralProgress"></div>
+
+                </div>
+
+
+            </div>
+
+
+
+            <!-- AI SCORE -->
+
+            <div class="stat-card score-card">
+
+
+                <div class="stat-top">
+
+                    <div class="stat-icon">
+                        ✦
+                    </div>
+
+                    <span class="sentiment-badge">
+                        AI Score
+                    </span>
+
+                </div>
+
+
+                <div class="stat-number"
+                     id="sentimentScore">
+
+                    Neutral
+
+                </div>
+
+
+                <div class="stat-label">
+
+                    Overall Sentiment
+
+                </div>
+
+
+                <div class="score-description">
+
+                    Audience sentiment result
+
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+
+    </section>
+
+
+
+    <!-- ============================================================
+         CHARTS SECTION
+    ============================================================ -->
+
+    <section class="charts-section">
+
+
+        <!-- BAR CHART -->
+
+        <div class="chart-card large-chart">
+
+
+            <div class="chart-header">
+
+
+                <div>
+
+                    <span class="eyebrow">
+                        SENTIMENT ANALYTICS
+                    </span>
+
+                    <h2>
+                        Audience Sentiment
+                    </h2>
+
+                </div>
+
+
+                <div class="chart-legend">
+
+
+                    <span>
+
+                        <i></i>
+
+                        Positive
+
+                    </span>
+
+
+                    <span>
+
+                        <i></i>
+
+                        Negative
+
+                    </span>
+
+
+                    <span>
+
+                        <i></i>
+
+                        Neutral
+
+                    </span>
+
+
+                </div>
+
+
+            </div>
+
+
+            <div class="chart-container">
+
+                <canvas id="trendChart"></canvas>
+
+            </div>
+
+
+        </div>
+
+
+
+        <!-- DONUT CHART -->
+
+        <div class="chart-card">
+
+
+            <div class="chart-header">
+
+
+                <div>
+
+                    <span class="eyebrow">
+                        DISTRIBUTION
+                    </span>
+
+                    <h2>
+                        Sentiment Mix
+                    </h2>
+
+                </div>
+
+
+            </div>
+
+
+            <div class="donut-container">
+
+
+                <canvas id="sentimentChart"></canvas>
+
+
+                <div class="donut-center">
+
+                    <strong id="donutTotal">
+                        0
+                    </strong>
+
+                    <span>
+                        Comments
+                    </span>
+
+                </div>
+
+
+            </div>
+
+
+            <!-- CHART SUMMARY -->
+
+            <div class="chart-summary">
+
+
+                <div>
+
+                    <span class="dot positive-dot"></span>
+
+                    <span>
+                        Positive
+                    </span>
+
+                    <strong id="positivePercent">
+                        0%
+                    </strong>
+
+                </div>
+
+
+                <div>
+
+                    <span class="dot negative-dot"></span>
+
+                    <span>
+                        Negative
+                    </span>
+
+                    <strong id="negativePercent">
+                        0%
+                    </strong>
+
+                </div>
+
+
+                <div>
+
+                    <span class="dot neutral-dot"></span>
+
+                    <span>
+                        Neutral
+                    </span>
+
+                    <strong id="neutralPercent">
+                        0%
+                    </strong>
+
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+
+    </section>
+
+
+
+    <!-- ============================================================
+         COMMENTS SECTION
+    ============================================================ -->
+
+    <section class="comments-section"
+             id="comments">
+
+
+        <div class="section-title">
+
+
+            <div>
+
+                <span class="eyebrow">
+                    COMMENT EXPLORER
+                </span>
+
+
+                <h2>
+                    Audience Voices
+                </h2>
+
+
+                <p>
+                    Explore comments and their detected sentiment.
+                </p>
+
+            </div>
+
+
+            <!-- SEARCH -->
+
+            <div class="comment-tools">
+
+                <input
+                    type="text"
+                    id="searchComments"
+                    placeholder="🔍 Search comments..."
+                    oninput="displayComments()"
+                >
+
+            </div>
+
+
+        </div>
+
+
+
+        <!-- COMMENTS LIST -->
+
+        <div id="commentsList"
+             class="comments-list">
+
+
+            <div class="empty-state">
+
+
+                <div class="empty-icon">
+                    💬
+                </div>
+
+
+                <h3>
+                    No comments analyzed yet
+                </h3>
+
+
+                <p>
+                    Analyze a YouTube video to see
+                    audience comments here.
+                </p>
+
+
+            </div>
+
+
+        </div>
+
+
+    </section>
+
+
+
+    <!-- ============================================================
+         QUICK SINGLE COMMENT ANALYSIS
+    ============================================================ -->
+
+    <section class="single-analysis">
+
+
+        <div class="single-header">
+
+
+            <div class="single-icon">
+                ✦
+            </div>
+
+
+            <div>
+
+
+                <span class="eyebrow">
+                    QUICK ANALYSIS
+                </span>
+
+
+                <h2>
+                    Test a Comment
+                </h2>
+
+
+                <p>
+                    Enter a comment and instantly
+                    detect its sentiment.
+                </p>
+
+
+            </div>
+
+
+        </div>
+
+
+
+        <!-- SINGLE COMMENT INPUT -->
+
+        <div class="single-input">
+
+
+            <input
+                type="text"
+                id="singleComment"
+                placeholder="Example: This video is amazing and very helpful!"
+                autocomplete="off"
+            >
+
+
+            <button
+                type="button"
+                onclick="analyzeSingleComment()"
+            >
+
+                Analyze
+
+                <span>
+                    →
+                </span>
+
+            </button>
+
+
+        </div>
+
+
+        <!-- SINGLE COMMENT RESULT -->
+
+        <div id="singleResult"
+             class="single-result-container">
+
+        </div>
+
+
+    </section>
+
+
+
+    <!-- ============================================================
+         AI INSIGHTS
+    ============================================================ -->
+
+    <section class="insights-section"
+             id="insights">
+
+
+        <div class="section-title">
+
+
+            <div>
+
+                <span class="eyebrow">
+                    AI INSIGHTS
+                </span>
+
+
+                <h2>
+                    What does your audience think?
+                </h2>
+
+
+                <p>
+                    Automatically generated insights
+                    from analyzed comments.
+                </p>
+
+            </div>
+
+
+        </div>
+
+
+
+        <div class="insights-grid">
+
+
+            <!-- POSITIVE INSIGHT -->
+
+            <div class="insight-card">
+
+
+                <div class="insight-icon">
+                    😊
+                </div>
+
+
+                <div>
+
+                    <h3>
+                        Positive Feedback
+                    </h3>
+
+                    <p>
+                        Positive comments show appreciation,
+                        support and satisfaction from your audience.
+                    </p>
+
+                </div>
+
+
+            </div>
+
+
+
+            <!-- NEGATIVE INSIGHT -->
+
+            <div class="insight-card">
+
+
+                <div class="insight-icon">
+                    😞
+                </div>
+
+
+                <div>
+
+                    <h3>
+                        Negative Feedback
+                    </h3>
+
+                    <p>
+                        Negative comments can highlight areas
+                        where your audience expects improvement.
+                    </p>
+
+                </div>
+
+
+            </div>
+
+
+
+            <!-- NEUTRAL INSIGHT -->
+
+            <div class="insight-card">
+
+
+                <div class="insight-icon">
+                    😐
+                </div>
+
+
+                <div>
+
+                    <h3>
+                        Neutral Feedback
+                    </h3>
+
+                    <p>
+                        Neutral comments provide factual,
+                        informational or unclear opinions.
+                    </p>
+
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+
+    </section>
+
+
+
+    <!-- ============================================================
+         HOW IT WORKS
+    ============================================================ -->
+
+    <section class="pipeline-section"
+             id="pipeline">
+
+
+        <div class="section-title">
+
+
+            <div>
+
+                <span class="eyebrow">
+                    PIPELINE
+                </span>
+
+
+                <h2>
+                    How Sentilytics Works
+                </h2>
+
+
+                <p>
+                    From YouTube URL to AI-powered sentiment insights.
+                </p>
+
+            </div>
+
+
+        </div>
+
+
+
+        <div class="pipeline-grid">
+
+
+            <!-- STEP 1 -->
+
+            <div class="pipeline-card">
+
+
+                <div class="pipeline-number">
+                    01
+                </div>
+
+
+                <div class="pipeline-icon">
+                    🔗
+                </div>
+
+
+                <h3>
+                    YouTube URL
+                </h3>
+
+
+                <p>
+                    Enter a public YouTube video or Shorts URL.
+                </p>
+
+
+            </div>
+
+
+
+            <!-- STEP 2 -->
+
+            <div class="pipeline-card">
+
+
+                <div class="pipeline-number">
+                    02
+                </div>
+
+
+                <div class="pipeline-icon">
+                    💬
+                </div>
+
+
+                <h3>
+                    Fetch Comments
+                </h3>
+
+
+                <p>
+                    YouTube Data API retrieves public comments.
+                </p>
+
+
+            </div>
+
+
+
+            <!-- STEP 3 -->
+
+            <div class="pipeline-card">
+
+
+                <div class="pipeline-number">
+                    03
+                </div>
+
+
+                <div class="pipeline-icon">
+                    ✦
+                </div>
+
+
+                <h3>
+                    Groq AI
+                </h3>
+
+
+                <p>
+                    Groq AI analyzes each comment's sentiment.
+                </p>
+
+
+            </div>
+
+
+
+            <!-- STEP 4 -->
+
+            <div class="pipeline-card">
+
+
+                <div class="pipeline-number">
+                    04
+                </div>
+
+
+                <div class="pipeline-icon">
+                    📊
+                </div>
+
+
+                <h3>
+                    Dashboard
+                </h3>
+
+
+                <p>
+                    Results are displayed using statistics and charts.
+                </p>
+
+
+            </div>
+
+
+        </div>
+
+
+    </section>
+
+
+
+    <!-- ============================================================
+         FOOTER
+    ============================================================ -->
+
+    <footer class="footer">
+
+
+        <div>
+
+            <strong>
+                Sentilytics
+            </strong>
+
+            <span>
+                YouTube AI Sentiment Analysis
+            </span>
+
+        </div>
+
+
+        <p>
+            Built with Python, Flask, YouTube Data API &amp; Groq AI
+        </p>
+
+
+    </footer>
+
+
+</main>
+
+
+
+<!-- ================================================================
+     CHART.JS
+     
+     IMPORTANT:
+     Chart.js must load BEFORE app.js.
+================================================================ -->
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+
+<!-- ================================================================
+     SENTILYTICS JAVASCRIPT
+================================================================ -->
+
+<script src="/static/app.js"></script>
+
+
+</body>
+
+</html>
